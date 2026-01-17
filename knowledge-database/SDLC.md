@@ -181,7 +181,7 @@ Closes #123"
      /      \  Integration Tests (some)
     /________\
    /          \ Unit Tests (many)
-  /__________\
+  /____________\
 ```
 
 **Deliverables:**
