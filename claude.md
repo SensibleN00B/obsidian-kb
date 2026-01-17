@@ -1,18 +1,28 @@
-# Claude Rules для Andrew's Obsidian Vault
+# Claude Rules for Andrew's Obsidian Vault
 
-## Загальні принципи
-- Мова: **Українська** з англійською технічною термінологією (без перекладу термінів)
-- Стиль: Структурований, детальний, практичний з прикладами
-- Фокус: Knowledge management для технічних тем
+## General Principles
+- Language: **Ukrainian** with English technical terminology (no translation of terms)
+- Style: Structured, detailed, practical with examples
+- Focus: Knowledge management for technical topics
 
-## Структура Vault
+## Vault Structure
+
 ```
-/knowledge-database/  → Технічні нотатки, фреймворки, методології
+obsidian-kb/
+├── knowledge-database/     → Technical notes, frameworks, methodologies
+├── guides/                 → Step-by-step guides, tutorials, how-tos
+├── claude.md              → Claude rules for content creation
+└── README.md              → Vault overview and navigation
 ```
 
-## Формат нотаток
+**Directory Purposes:**
+- **`/knowledge-database/`** - Core technical knowledge: frameworks, methodologies, technologies, concepts
+- **`/guides/`** - Practical tutorials and deployment guides
+- **Root level** - Configuration files and vault documentation
 
-### Frontmatter (обов'язковий)
+## Note Format
+
+### Frontmatter (required)
 ```yaml
 ---
 tags:
@@ -22,170 +32,268 @@ tags:
 aliases:
   - Українська назва
   - English Name
-  - Альтернативна назва
+  - Alternative name
 created: YYYY-MM-DD
 topic: Broader Category
 ---
 ```
 
-### Структура документа
+### Document Structure
 
-1. **# Заголовок** (H1 - лише один на документ)
+1. **# Title** (H1 - only one per document)
 
-2. **TL;DR Summary Block** (завжди на початку):
+2. **TL;DR Summary Block** (always at the beginning):
 ```markdown
 > [!SUMMARY] TL;DR
-> Короткий виклад (2-4 речення)
-> **Ключова ідея:** основна суть теми
+> Brief summary (2-4 sentences)
+> **Key idea:** core essence of the topic
 ```
 
-3. **Основні секції** (numbered):
-   - ## 1. Фундаментальна теорія
-   - ## 2. Структура/Компоненти
-   - ## 3. Візуалізація (діаграми, схеми)
-   - ## 4. Практичні приклади
-   - ## 5. Порівняння (якщо релевантно)
-   - ## 6. Проблеми/Анти-патерни
-   - ## 7. Корисні посилання
+3. **Main Sections** (numbered):
+   - ## 1. Fundamental Theory
+   - ## 2. Structure/Components
+   - ## 3. Visualization (diagrams, schemas)
+   - ## 4. Practical Examples
+   - ## 5. Comparison (if relevant)
+   - ## 6. Problems/Anti-patterns
+   - ## 7. Useful Links
 
-4. **Next Actions** (опціонально):
+4. **Next Actions** (optional):
 ```markdown
 **Next Actions:**
 - [ ] Action item 1
 - [ ] Action item 2
 ```
 
-## Callout Blocks (використовувати активно)
+## Callout Blocks (use actively)
 
-- `[!SUMMARY]` — TL;DR на початку
-- `[!INFO]` — Додаткова інформація, історичні факти
-- `[!TIP]` — Практичні поради, best practices
-- `[!WARNING]` — Застереження, анти-патерни
-- `[!EXAMPLE]` — Розгорнуті приклади з кодом/розрахунками
+- `[!SUMMARY]` — TL;DR at the beginning
+- `[!INFO]` — Additional information, historical facts
+- `[!TIP]` — Practical tips, best practices
+- `[!WARNING]` — Warnings, anti-patterns
+- `[!EXAMPLE]` — Detailed examples with code/calculations
 
-## Контент-елементи
+## Content Elements
 
 ### Tables
-Використовувати для порівнянь, характеристик:
+Use for comparisons, characteristics:
 ```markdown
-| Характеристика | Варіант 1 | Варіант 2 |
+| Characteristic | Option 1 | Option 2 |
 | :--- | :--- | :--- |
-| Параметр | Значення | Значення |
+| Parameter | Value | Value |
 ```
 
 ### Code Blocks
-З явною вказівкою мови:
+With explicit language specification:
 ```python
 # Example code
 def function():
     pass
 ```
 
-### Діаграми (Mermaid)
-Для процесів, архітектури:
+### Diagrams (Mermaid)
+For processes, architecture:
 ```mermaid
 graph TD
     A --> B
 ```
 
-### LaTeX формули
-Для математичних виразів:
+### LaTeX Formulas
+For mathematical expressions:
 ```
 $$ formula $$
-або $ inline $
+or $ inline $
 ```
 
 ### Internal Links
-- Використовувати `[[Page Name]]` для зв'язків між нотатками
-- Створювати нові нотатки для окремих концепцій (Product Owner, Sprint, etc.)
-- Не перевантажувати одну нотатку - краще розбити на пов'язані
+- Use `[[Page Name]]` for links between notes
+- Create new notes for separate concepts (Product Owner, Sprint, etc.)
+- Don't overload one note - better to split into related ones
 
 ## Naming Conventions
 
-### Файли
-- **Англійською** для технічних тем: `Scrum.md`, `SDLC.md`
-- **CamelCase** або **PascalCase**: `ProductOwner.md`, `SprintPlanning.md`
-- **Kebab-case** для багатослівних: `machine-learning-basics.md`
+### Files
+- **In English** for technical topics: `Scrum.md`, `SDLC.md`
+- **CamelCase** or **PascalCase**: `ProductOwner.md`, `SprintPlanning.md`
+- **Kebab-case** for multi-word: `machine-learning-basics.md`
 
 ### Tags
-- Lowercase з дефісами: `project-management`, `agile`, `framework`
-- Ієрархія: загальне → специфічне
+- Lowercase with hyphens: `project-management`, `agile`, `framework`
+- Hierarchy: general → specific
 
-## Коли створювати нову нотатку vs розширювати існуючу
+## When to Create New Note vs Expand Existing
 
-**Нова нотатка:**
-- Окрема концепція/термін, на який можна посилатися
-- Тема заслуговує на детальне висвітлення (500+ слів)
-- Буде використовуватися в multiple contexts
+**New Note:**
+- Separate concept/term that can be referenced
+- Topic deserves detailed coverage (500+ words)
+- Will be used in multiple contexts
 
-**Розширення існуючої:**
-- Додаткові деталі до основної теми
-- Приклади/кейси для ілюстрації
-- Короткі роз'яснення (< 300 слів)
+**Expand Existing:**
+- Additional details to main topic
+- Examples/cases for illustration
+- Short explanations (< 300 words)
 
-## Приклади створення
+## Creation Examples
 
-### Запит: "Створи нотатку про REST API"
-→ Створю `/knowledge-database/REST-API.md` з:
+### Request: "Create a note about REST API"
+→ Will create `/knowledge-database/REST-API.md` with:
 - Frontmatter (tags: api, rest, web, http)
-- TL;DR про що таке REST
-- Секції: Principles, HTTP Methods, Status Codes, Examples, Best Practices
-- Code приклади (curl, Python requests)
-- Порівняння з GraphQL/SOAP
-- Діаграма request/response flow
+- TL;DR about what REST is
+- Sections: Principles, HTTP Methods, Status Codes, Examples, Best Practices
+- Code examples (curl, Python requests)
+- Comparison with GraphQL/SOAP
+- Request/response flow diagram
 
-### Запит: "Додай інфо про OAuth до REST API нотатки"
-→ Якщо OAuth - це окрема велика тема:
-- Створю `/knowledge-database/OAuth.md`
-- В REST-API.md додам посилання: "For authentication, see [[OAuth]]"
+### Request: "Add info about OAuth to REST API note"
+→ If OAuth is a separate large topic:
+- Will create `/knowledge-database/OAuth.md`
+- In REST-API.md will add link: "For authentication, see [[OAuth]]"
 
-→ Якщо просто приклад:
-- Додам секцію "Authentication" в REST-API.md з прикладом OAuth flow
+→ If just an example:
+- Will add "Authentication" section in REST-API.md with OAuth flow example
 
-## Стиль написання
+## Writing Style
 
-- **Лаконічно але вичерпно** - без води, але з деталями
-- **Структуровано** - чітка ієрархія заголовків
-- **З прикладами** - завжди code/real-world examples
-- **Практично** - не тільки теорія, а й як використовувати
-- **Візуально** - таблиці, діаграми, callouts для кращого сприйняття
+- **Concise but comprehensive** - no fluff, but with details
+- **Structured** - clear heading hierarchy
+- **With examples** - always code/real-world examples
+- **Practical** - not just theory, but how to use
+- **Visual** - tables, diagrams, callouts for better perception
 
-## Використання Context7 MCP для актуальної документації
+## Using Context7 MCP for Up-to-Date Documentation
 
-**ВАЖЛИВО:** При написанні або редагуванні файлів про технології, фреймворки, бібліотеки чи інструменти - завжди використовуй Context7 MCP для отримання актуальної документації.
+**IMPORTANT:** When writing or editing files about technologies, frameworks, libraries, or tools - always use Context7 MCP to get up-to-date documentation.
 
-**Коли використовувати Context7:**
-- Створення нотаток про конкретні технології (React, Django, Docker, etc.)
-- Додавання прикладів коду з APIs
-- Перевірка актуальності синтаксису та best practices
-- Уточнення версій та deprecated features
+**When to use Context7:**
+- Creating notes about specific technologies (React, Django, Docker, etc.)
+- Adding code examples with APIs
+- Verifying syntax and best practices currency
+- Clarifying versions and deprecated features
 
-**Процес:**
-1. Спочатку `Context7:resolve-library-id` для знаходження потрібної бібліотеки
-2. Потім `Context7:get-library-docs` з library ID для отримання документації
-3. Включити актуальну інформацію в нотатку з вказанням версії
+**Process:**
+1. First `Context7:resolve-library-id` to find the needed library
+2. Then `Context7:get-library-docs` with library ID to get documentation
+3. Include up-to-date information in the note with version indication
 
-**Приклад:**
+**Example:**
 ```markdown
 # React Hooks
 
 > [!INFO] Version
-> Інформація актуальна для React 18.x (станом на 2025-01-10)
-> Джерело: офіційна документація через Context7
+> Information is current for React 18.x (as of 2025-01-10)
+> Source: official documentation via Context7
 
 ## useState
-[актуальна інформація з Context7]
+[up-to-date information from Context7]
 ```
 
-**Що НЕ робити:**
-- ❌ Покладатися тільки на знання Claude (може бути outdated)
-- ❌ Копіювати старі приклади без перевірки
-- ❌ Ігнорувати версії та breaking changes
+**What NOT to do:**
+- ❌ Rely only on Claude's knowledge (may be outdated)
+- ❌ Copy old examples without verification
+- ❌ Ignore versions and breaking changes
 
-**Що робити:**
-- ✅ Перевіряти синтаксис через Context7
-- ✅ Вказувати версії технологій
-- ✅ Позначати deprecated features
-- ✅ Додавати посилання на офіційну документацію
+**What to do:**
+- ✅ Verify syntax through Context7
+- ✅ Specify technology versions
+- ✅ Mark deprecated features
+- ✅ Add links to official documentation
+
+## Using Icons from MCP Servers
+
+**IMPORTANT:** When creating, editing, or updating articles - always search for and insert relevant icons to improve visual perception.
+
+**Available MCP servers for icons:**
+1. **Hugeicons** - large collection of icons in various styles
+2. **Icons8** - over 130 icon styles (Windows Metro, Gradient Line, Simple Small, etc.)
+
+**When to use icons:**
+- ✅ At the beginning of document (near H1 heading) - main topic icon
+- ✅ In sections for visual content separation
+- ✅ In callout blocks to reinforce meaning
+- ✅ In lists for better readability
+- ✅ In tables for categories/types
+
+**Process of adding icons:**
+
+1. **Determine theme/context:**
+   - What is the article about? (technology, methodology, tool)
+   - What key concepts need illustration?
+
+2. **Search for icons:**
+   ```
+   Hugeicons: mcp_hugeicons_search_icons(query="search term")
+   Icons8: mcp_icons8mcp_search_icons(query="search term")
+   ```
+
+3. **Get icon:**
+   ```
+   Hugeicons: mcp_hugeicons_get_icon_glyphs(icon_name="icon-name")
+   Icons8: mcp_icons8mcp_get_icon_png_url(icon_id="id", size=24)
+   ```
+
+4. **Insert into document:**
+   - For Hugeicons: use Unicode symbol (glyph)
+   - For Icons8: insert as image `![icon description](url)`
+
+**Usage Examples:**
+
+### Icon in Heading
+```markdown
+# 🚀 React Hooks
+
+or
+
+# ⚛️ React Hooks
+```
+
+### Icons in Sections
+```markdown
+## 📚 1. Fundamental Theory
+## 🏗️ 2. Structure/Components
+## 🎨 3. Visualization
+## 💡 4. Practical Examples
+## ⚖️ 5. Comparison
+## ⚠️ 6. Problems/Anti-patterns
+## 🔗 7. Useful Links
+```
+
+### Icons in Callouts
+```markdown
+> [!TIP] 💡 Tip
+> Use useState for simple state
+
+> [!WARNING] ⚠️ Warning
+> Don't mutate state directly
+```
+
+### Icons in Lists
+```markdown
+**Advantages:**
+- ✅ Easy to use
+- ✅ Good documentation
+- ✅ Large community
+
+**Disadvantages:**
+- ❌ Learning curve
+- ❌ Overhead for small projects
+```
+
+**Style Recommendations:**
+- Use icons moderately - don't overload the document
+- Choose icons that match the context and theme
+- Maintain consistency of icon style within one document
+- For technical topics, prefer simple, clear icons
+
+**What NOT to do:**
+- ❌ Use icons instead of text (icons are supplementary)
+- ❌ Mix different icon styles chaotically
+- ❌ Add icons "for beauty" without semantic meaning
+- ❌ Overload every line with icons
+
+**What to do:**
+- ✅ Search for icons that match the article topic
+- ✅ Use icons to improve navigation
+- ✅ Add icons to important sections and callouts
+- ✅ Maintain balance between text and visual elements
 
 ---
