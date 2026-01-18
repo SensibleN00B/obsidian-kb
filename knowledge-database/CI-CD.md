@@ -14,7 +14,7 @@ created: 2025-01-10
 topic: DevOps
 ---
 
-# CI/CD
+# <img src="https://img.icons8.com/?id=43096&format=png&size=48" width="48" height="48" alt="Pipeline" style="vertical-align: middle;"/> CI/CD
 
 > [!SUMMARY] TL;DR
 > CI/CD — це практика автоматизації побудови, тестування та deployment коду. Continuous Integration забезпечує часту інтеграцію змін у спільний репозиторій, Continuous Delivery готує код до релізу, а Continuous Deployment автоматично деплоїть кожну зміну в production. Це дозволяє швидше доставляти фічі, зменшує ризики та покращує якість коду.

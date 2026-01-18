@@ -1,4 +1,4 @@
-# 🚀 Deploying a FastAPI App on a VPS with Nginx and SSL
+# <img src="https://img.icons8.com/?id=13441&format=png&size=48" width="48" height="48" alt="Python" style="vertical-align: middle;"/> Deploying a FastAPI App on a VPS with Nginx and SSL
 
 This guide provides a comprehensive, step-by-step process for deploying a production-ready **FastAPI** application on a Linux VPS (Ubuntu/Debian).
 

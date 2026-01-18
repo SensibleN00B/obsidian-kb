@@ -12,7 +12,7 @@ created: 2025-01-10
 topic: Software Engineering
 ---
 
-# System Requirements Specification (SysRS)
+# <img src="https://img.icons8.com/?id=Ygov9LJC2LzE&format=png&size=48" width="48" height="48" alt="Document" style="vertical-align: middle;"/> System Requirements Specification (SysRS)
 
 > [!SUMMARY] TL;DR
 > SysRS описує технічні вимоги до системи в цілому: апаратне забезпечення, операційні системи, мережа, безпека, продуктивність, compliance. Фокусується на **системних capabilities** та **constraints**, а не на user-facing features. Використовується DevOps, infrastructure engineers, architects.

@@ -15,13 +15,13 @@ created: 2026-01-10
 topic: Software Development Methodologies
 ---
 
-# Agile Methodology
+# <img src="https://img.icons8.com/?id=43096&format=png&size=48" width="48" height="48" alt="Agile" style="vertical-align: middle;"/> Agile Methodology
 
 > [!SUMMARY] TL;DR
 > Agile — це набір принципів та практик для ітеративної розробки ПЗ з фокусом на швидке delivery, адаптацію до змін та тісну collaboration з клієнтом. Замість великих releases раз на рік — малі increments кожні 1-4 тижні. Замість детальних планів на місяці вперед — adaptive planning з regular feedback loops.
 > **Ключова ідея:** "Embrace change" — зміни — це нормально і навіть бажано, якщо вони ведуть до кращого продукту.
 
-## 1. Фундаментальна теорія
+## ![Book](https://img.icons8.com/?id=39FLspc26r4c&format=png&size=32) 1. Фундаментальна теорія
 
 **Agile** — це не конкретна методологія, а філософія та набір цінностей для розробки ПЗ, викладених у **Agile Manifesto** (2001 рік). Agile включає різні frameworks: [[Scrum]], Kanban, XP (Extreme Programming), Lean, Crystal та інші.
 
@@ -60,7 +60,7 @@ topic: Software Development Methodologies
 - Коли потрібен швидкий time-to-market
 - Teams які можуть працювати closely з client
 
-## 2. Agile Frameworks та підходи
+## ![Methodology](https://img.icons8.com/?id=RupzjxT3GmGw&format=png&size=32) 2. Agile Frameworks та підходи
 
 Agile — це umbrella term, під яким існують різні frameworks:
 
@@ -103,7 +103,7 @@ graph TD
 > - **Optimization focus?** → Lean (waste reduction)
 > - **Mature team?** → Scrumban або custom hybrid
 
-## 3. Core Agile Concepts
+## ![Sync](https://img.icons8.com/?id=dkvPGMU3MKpu&format=png&size=32) 3. Core Agile Concepts
 
 ### Iterative та Incremental Development
 
@@ -243,7 +243,7 @@ Average Velocity = (23 + 27 + 25) / 3 = 25 points per sprint
 - **Мета:** Prepare backlog items для майбутніх sprints
 - **Активності:** Story breakdown, estimation, clarification
 
-## 5. Практичні приклади
+## ![Code](https://img.icons8.com/?id=keI1M862UTP2&format=png&size=32) 5. Практичні приклади
 
 ### Приклад 1: Spotify (успішний Agile at scale)
 
@@ -678,7 +678,7 @@ STORY BREAKDOWN:
 > - Adapt framework до organization culture
 > - Be patient — cultural change is slow
 
-## 6. Agile vs Traditional: порівняння
+## ![Chart](https://img.icons8.com/?id=4VdgitiyspJ9&format=png&size=32) 6. Agile vs Traditional: порівняння
 
 | Аспект | Agile | [[Waterfall-Model]] / [[V-Model]] |
 | :--- | :--- | :--- |

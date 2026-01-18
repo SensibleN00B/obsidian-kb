@@ -14,7 +14,7 @@ created: 2026-01-10
 topic: Software Development Methodologies
 ---
 
-# V-Model (Verification and Validation Model)
+# <img src="https://img.icons8.com/?id=Ygov9LJC2LzE&format=png&size=48" width="48" height="48" alt="V-Model" style="vertical-align: middle;"/> V-Model (Verification and Validation Model)
 
 > [!SUMMARY] TL;DR
 > V-Model — це розширення Waterfall моделі, де кожна фаза розробки має відповідну фазу тестування. Утворює V-подібну структуру: ліва сторона — development phases, права — testing phases. Основна ідея: planning testing паралельно з development для раннього виявлення дефектів.

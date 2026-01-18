@@ -1,6 +1,26 @@
-# 🐋 Повний гайд з Best Practices для Dockerfile
+---
+tags:
+  - docker
+  - containers
+  - devops
+  - best-practices
+  - dockerfile
+  - optimization
+  - security
+aliases:
+  - Docker Best Practices
+  - Dockerfile Гайд
+  - Docker Оптимізація
+  - Багатоетапні збірки
+created: 2026-01-17
+topic: Containerization
+---
 
-> Комплексний посібник з найкращих практик створення Dockerfile на основі офіційної документації Docker
+# <img src="https://img.icons8.com/?id=22813&format=png&size=48" width="48" height="48" alt="Docker" style="vertical-align: middle;"/> Docker Dockerfile Best Practices
+
+> [!SUMMARY] TL;DR
+> Комплексний посібник з найкращих практик створення Dockerfile на основі офіційної документації Docker. Охоплює багатоетапні збірки, оптимізацію кешування, безпеку контейнерів та вибір базових образів.
+> **Ключова ідея:** Використання multi-stage builds, правильне кешування шарів, запуск від непривілейованого користувача та мінімізація розміру образів для створення продуктивних та безпечних Docker-контейнерів.
 
 ## 📑 Зміст
 
@@ -16,7 +36,7 @@
 
 ---
 
-## Багатоетапні збірки (Multi-stage Builds)
+## ![Layers](https://img.icons8.com/?id=wJVDOwCZqokW&format=png&size=32) Багатоетапні збірки (Multi-stage Builds)
 
 ### 🎯 Навіщо потрібні?
 
@@ -123,7 +143,7 @@ CMD ["dumb-init", "node", "dist/index.js"]
 
 ---
 
-## Оптимізація кешування шарів
+## ![Settings](https://img.icons8.com/?id=s5NUIabJrb4C&format=png&size=32) Оптимізація кешування шарів
 
 ### 🎯 Принцип роботи кешу
 
@@ -193,7 +213,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 ---
 
-## Безпека Docker-образів
+## ![Security](https://img.icons8.com/?id=FbRY9JkBrjiX&format=png&size=32) Безпека Docker-образів
 
 ### 🔒 Основні принципи безпеки
 
@@ -282,7 +302,7 @@ FROM node:20.11.0-alpine3.19@sha256:abc123...
 
 ---
 
-## Вибір базових образів
+## ![Book](https://img.icons8.com/?id=39FLspc26r4c&format=png&size=32) Вибір базових образів
 
 ### 📦 Типи базових образів
 
@@ -349,7 +369,7 @@ FROM python:3.11  # ~800MB
 
 ---
 
-## Робота з інструкціями COPY та ADD
+## ![Copy](https://img.icons8.com/?id=s30bO0DNz4I5&format=png&size=32) Робота з інструкціями COPY та ADD
 
 ### 📋 COPY vs ADD - коли що використовувати?
 
@@ -403,7 +423,7 @@ COPY --chown=node:node . /app
 
 ---
 
-## CMD vs ENTRYPOINT
+## ![Command Line](https://img.icons8.com/?id=9hLY0P1ixONa&format=png&size=32) CMD vs ENTRYPOINT
 
 ### 🎯 Різниця та правила використання
 
@@ -505,7 +525,7 @@ CMD ["default-command"]
 
 ---
 
-## ARG vs ENV
+## ![Variable](https://img.icons8.com/?id=MaUnj0YyoFS7&format=png&size=32) ARG vs ENV
 
 ### 🎯 Основна різниця
 
@@ -647,7 +667,7 @@ RUN --mount=type=secret,id=db_password \
 
 ---
 
-## Файл .dockerignore
+## ![Folder](https://img.icons8.com/?id=dINnkNb1FBl4&format=png&size=32) Файл .dockerignore
 
 ### 🎯 Навіщо потрібен .dockerignore?
 
@@ -857,7 +877,7 @@ node_modules/
 
 ---
 
-## Практичні приклади
+## ![Code](https://img.icons8.com/?id=keI1M862UTP2&format=png&size=32) Практичні приклади
 
 ### 🚀 Full-Stack Node.js додаток
 

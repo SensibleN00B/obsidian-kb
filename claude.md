@@ -200,100 +200,128 @@ or $ inline $
 
 ## Using Icons from MCP Servers
 
-**IMPORTANT:** When creating, editing, or updating articles - always search for and insert relevant icons to improve visual perception.
+**IMPORTANT:** When creating, editing, or updating articles - always search for and insert relevant **original icons** via MCP to improve visual perception and maintain professional appearance.
 
-**Available MCP servers for icons:**
-1. **Hugeicons** - large collection of icons in various styles
-2. **Icons8** - over 130 icon styles (Windows Metro, Gradient Line, Simple Small, etc.)
+**Available MCP server:**
+- **Icons8 MCP** - over 130 icon styles (iOS, Fluent, Color, Material, Office, etc.)
 
-**When to use icons:**
-- ✅ At the beginning of document (near H1 heading) - main topic icon
-- ✅ In sections for visual content separation
-- ✅ In callout blocks to reinforce meaning
-- ✅ In lists for better readability
-- ✅ In tables for categories/types
+**When to use Icons8 MCP:**
+- ✅ **For tools and applications** - search for original brand icons (Docker, React, Python, VS Code, etc.)
+- ✅ **For technologies** - find official logos and symbols
+- ✅ **For concepts** - use unified style icons in consistent platform (e.g., all in "ios-filled" or "fluent")
+- ✅ **For methodologies** - abstract concepts with matching style
+
+**Style Consistency Rules:**
+- **Choose ONE platform/style** for the entire document (e.g., "ios-filled", "fluent", "color", "office")
+- **For technical documentation** - prefer professional styles: "fluent", "ios-filled", "color"
+- **For creative/design topics** - can use: "doodle", "cotton", "stickers"
+- **For minimalist docs** - use: "ios-glyphs", "material-outlined", "sf-black"
 
 **Process of adding icons:**
 
-1. **Determine theme/context:**
-   - What is the article about? (technology, methodology, tool)
-   - What key concepts need illustration?
+1. **Determine topic and required style:**
+   - Article about tool/app → search for original icon
+   - Need unified look → choose platform (e.g., "fluent") and use it consistently
 
-2. **Search for icons:**
+2. **Explore available platforms:**
    ```
-   Hugeicons: mcp_hugeicons_search_icons(query="search term")
-   Icons8: mcp_icons8mcp_search_icons(query="search term")
+   mcp_icons8mcp_list_platforms()
+   ```
+   Reviews available styles: ios, fluent, color, material, office, etc.
+
+3. **Search for icons:**
+   ```
+   mcp_icons8mcp_search_icons(
+       query="docker",
+       platform="fluent",  // optional - for style filtering
+       amount=10
+   )
    ```
 
-3. **Get icon:**
+4. **Get icon URL:**
    ```
-   Hugeicons: mcp_hugeicons_get_icon_glyphs(icon_name="icon-name")
-   Icons8: mcp_icons8mcp_get_icon_png_url(icon_id="id", size=24)
+   mcp_icons8mcp_get_icon_png_url(
+       icon_id="found_icon_id",
+       size=48  // 24, 48, 96 depending on usage
+   )
    ```
 
-4. **Insert into document:**
-   - For Hugeicons: use Unicode symbol (glyph)
-   - For Icons8: insert as image `![icon description](url)`
+5. **Insert into document:**
+   ```markdown
+   ![Docker icon](https://icons8.com/icon/...)
+   ```
 
 **Usage Examples:**
 
-### Icon in Heading
+### Icon for Tool/Technology in Heading
 ```markdown
-# 🚀 React Hooks
+# ![Docker icon](url) Docker Best Practices
 
-or
+or for text-only support:
 
-# ⚛️ React Hooks
+# 🐳 Docker Best Practices
 ```
 
-### Icons in Sections
+### Unified Style Icons in Sections (all from "fluent" platform)
 ```markdown
-## 📚 1. Fundamental Theory
-## 🏗️ 2. Structure/Components
-## 🎨 3. Visualization
-## 💡 4. Practical Examples
-## ⚖️ 5. Comparison
-## ⚠️ 6. Problems/Anti-patterns
-## 🔗 7. Useful Links
+## ![Book icon fluent](url) 1. Fundamental Theory
+## ![Building icon fluent](url) 2. Structure/Components
+## ![Chart icon fluent](url) 3. Visualization
+## ![Lightbulb icon fluent](url) 4. Practical Examples
 ```
 
-### Icons in Callouts
+### Original Brand Icons for Technologies
 ```markdown
-> [!TIP] 💡 Tip
-> Use useState for simple state
-
-> [!WARNING] ⚠️ Warning
-> Don't mutate state directly
+**Tech Stack:**
+- ![React icon](url) React 18.x
+- ![Docker icon](url) Docker 24.x
+- ![PostgreSQL icon](url) PostgreSQL 15.x
 ```
 
-### Icons in Lists
+### Consistent Style for Abstract Concepts
 ```markdown
-**Advantages:**
-- ✅ Easy to use
-- ✅ Good documentation
-- ✅ Large community
+> [!TIP] ![Lightbulb icon fluent](url) Tip
+> Use hooks for state management
 
-**Disadvantages:**
-- ❌ Learning curve
-- ❌ Overhead for small projects
+> [!WARNING] ![Warning icon fluent](url) Warning
+> Avoid prop drilling
 ```
 
 **Style Recommendations:**
-- Use icons moderately - don't overload the document
-- Choose icons that match the context and theme
-- Maintain consistency of icon style within one document
-- For technical topics, prefer simple, clear icons
+
+**For Tools & Applications:**
+- ✅ **Search for ORIGINAL icons** via Icons8 (Docker, VS Code, GitHub, etc.)
+- ✅ Use "color" platform for branded icons
+- ✅ Keep size consistent (48-64px for headings, 24-32px for lists)
+
+**For Unified Document Style:**
+- ✅ Choose ONE platform at document start (e.g., "fluent" or "ios-filled")
+- ✅ Use ONLY this platform for all icons in document
+- ✅ Maintain visual harmony and professional appearance
+
+**For Abstract Concepts:**
+- ✅ Use same platform as main document style
+- ✅ Search by concept: "settings", "security", "performance", etc.
 
 **What NOT to do:**
-- ❌ Use icons instead of text (icons are supplementary)
-- ❌ Mix different icon styles chaotically
-- ❌ Add icons "for beauty" without semantic meaning
-- ❌ Overload every line with icons
+- ❌ Mix emoji (🚀) with Icons8 images chaotically
+- ❌ Use different platforms in one document (fluent + office + doodle)
+- ❌ Use low-quality icons when original ones exist in Icons8
+- ❌ Add icons without semantic meaning
+- ❌ Use random sizes (24px in heading, 96px in list)
 
 **What to do:**
-- ✅ Search for icons that match the article topic
-- ✅ Use icons to improve navigation
-- ✅ Add icons to important sections and callouts
-- ✅ Maintain balance between text and visual elements
+- ✅ **ALWAYS search Icons8 MCP** for tools/apps before using emoji
+- ✅ Choose consistent platform for unified style
+- ✅ Use original brand icons for technologies
+- ✅ Maintain size consistency throughout document
+- ✅ Balance text and visual elements
+
+**Example Workflow for Article about Docker:**
+1. Search for Docker icon: `mcp_icons8mcp_search_icons(query="docker", platform="color")`
+2. Get Docker icon URL for header (size=64)
+3. Choose "fluent" platform for other icons (book, warning, tip, etc.)
+4. Search and insert ALL section icons from "fluent" platform
+5. Result: Professional look with original Docker branding + consistent style
 
 ---

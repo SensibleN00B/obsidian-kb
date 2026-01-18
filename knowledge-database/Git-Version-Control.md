@@ -12,7 +12,7 @@ created: 2025-01-10
 topic: DevOps
 ---
 
-# Git & Version Control
+# <img src="https://img.icons8.com/?id=20906&format=png&size=48" width="48" height="48" alt="Git" style="vertical-align: middle;"/> Git & Version Control
 
 > [!SUMMARY] TL;DR
 > Git - розподілена система контролю версій, яка дозволяє відстежувати зміни в коді, працювати паралельно в команді, повертатися до попередніх версій та зберігати історію проекту. Кожен розробник має повну копію репозиторію локально.

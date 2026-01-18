@@ -10,7 +10,7 @@ created: 2025-01-10
 topic: Agile Methodologies
 ---
 
-# Scrum
+# <img src="https://img.icons8.com/?id=43096&format=png&size=48" width="48" height="48" alt="Scrum" style="vertical-align: middle;"/> Scrum
 
 > [!SUMMARY] TL;DR
 > Scrum - Agile framework для ітеративної розробки. Короткі sprints (1-4 тижні), 3 ролі (PO, SM, Developers), 5 events, 3 artifacts. Базується на емпіризмі: transparency → inspection → adaptation.

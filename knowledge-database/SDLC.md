@@ -12,7 +12,7 @@ created: 2025-01-10
 topic: Software Engineering
 ---
 
-# Software Development Life Cycle (SDLC)
+# <img src="https://img.icons8.com/?id=vn5c9XxoOrI0&format=png&size=48" width="48" height="48" alt="Lifecycle" style="vertical-align: middle;"/> Software Development Life Cycle (SDLC)
 
 > [!SUMMARY] TL;DR
 > SDLC - це структурований процес розробки програмного забезпечення від початкової ідеї до підтримки та виведення з експлуатації. Включає фази планування, аналізу, дизайну, імплементації, тестування, deployment та maintenance.

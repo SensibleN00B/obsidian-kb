@@ -12,7 +12,7 @@ created: 2025-01-10
 topic: Software Engineering
 ---
 
-# Software Requirements Specification (SRS)
+# <img src="https://img.icons8.com/?id=Ygov9LJC2LzE&format=png&size=48" width="48" height="48" alt="Document" style="vertical-align: middle;"/> Software Requirements Specification (SRS)
 
 > [!SUMMARY] TL;DR
 > SRS - формальний документ що описує функціональні та нефункціональні вимоги до системи. Містить детальний опис що система має робити (functions), як вона має працювати (performance), та які обмеження існують (constraints). Слідує IEEE 830 стандарту.

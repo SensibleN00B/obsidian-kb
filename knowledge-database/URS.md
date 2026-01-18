@@ -12,7 +12,7 @@ created: 2025-01-10
 topic: Software Engineering
 ---
 
-# User Requirements Specification (URS)
+# <img src="https://img.icons8.com/?id=Ygov9LJC2LzE&format=png&size=48" width="48" height="48" alt="Document" style="vertical-align: middle;"/> User Requirements Specification (URS)
 
 > [!SUMMARY] TL;DR
 > URS описує вимоги з точки зору користувачів у формі user stories та сценаріїв використання. Фокусується на тому, **що** користувачі хочуть робити та **навіщо**, а не на технічній реалізації. Написані простою мовою, зрозумілою для non-technical stakeholders.

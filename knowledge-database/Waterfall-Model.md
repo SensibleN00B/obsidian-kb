@@ -12,7 +12,7 @@ created: 2026-01-10
 topic: Software Development Methodologies
 ---
 
-# Waterfall Model
+# <img src="https://img.icons8.com/?id=ACpXOMJTLZeO&format=png&size=48" width="48" height="48" alt="Waterfall" style="vertical-align: middle;"/> Waterfall Model
 
 > [!SUMMARY] TL;DR
 > Waterfall — це послідовна модель розробки ПЗ, де кожна фаза завершується перед початком наступної. Характеризується чіткою структурою, детальною документацією та відсутністю зворотних зв'язків між фазами.

@@ -1,4 +1,4 @@
-# 📚 Andrew's Knowledge Database
+# <img src="https://img.icons8.com/?id=7ax9M8ukZIPl&format=png&size=48" width="48" height="48" alt="Knowledge" style="vertical-align: middle;"/> 📚 Andrew's Knowledge Database
 
 > Personal knowledge base for technical topics, development methodologies, and best practices.
 
@@ -88,5 +88,5 @@ This is a personal vault, but if you noticed an error or have an interesting ins
 
 ---
 
-**Last updated:** 2026-01-10  
+**Last updated:** 2026-01-17  
 **Total notes:** Growing collection 🌱
